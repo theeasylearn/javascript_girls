@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" name="btnconfirm" onclick="confirmdelete();">Confirm Delete</button>
+    <input type="button" name="btnsayhi" value="Say Hi" onclick="sayHi();" />
+    <input type="button" name="btninput" value="what is your name" onclick="getinput();">
+<script>
+    function getinput()
+    {
+        var name = prompt("what is your name","Mr India");
+        alert(name);
+    }
+    //user defined function (UDF) function created by us(developer) is called user defined function
+    function sayHi()
+    {
+        alert("Say Hi");
+    }
+    function confirmdelete()
+    {
+        //this function will be called when user click on button whose name is btnconfirm
+        var ConfirmationStatus = confirm("Are you sure you want to do this?");
+        if(ConfirmationStatus==true)
+        {
+            alert("you have confirmed...");
+        }
+        else 
+        {
+            alert("you have aborted the operations");
+        }
+    }
+</script>
+</body>
+</html>
